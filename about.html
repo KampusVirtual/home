@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="image/logo-01.png" type="image/x-icon">
+</head>
+<body>
+    <header id="header">
+        <p><a class="jingan" href="index.html">
+            <img src="image/logo-01.png" alt="" width="100px"> 
+            <a href="https://unpad.ac.id" target="_blank">
+              <img src="image/logo-02.png" alt="" width="100px"></a>
+              <a href="https://kampusmerdeka.kemdikbud.go.id/" target="_blank">
+                  <img src="image/logo-03.png" alt="" width="100px">
+              </a>
+          </a>
+        </p>    
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="poster.html">Poster</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="image/stars.png" id="stars">
+        <img src="image/moon.png" id="moon">
+        <img src="image/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Kampus Virtual</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="image/mountains_front-02.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+            <h2>Tentang Kampus Virtual</h2>
+            <br><br>
+            <p>Kampus Virtual adalah tema mata kuliah okk untuk RK193. Berdasarkan proyek yang kita buat, kita membangun proyek kampus virtual yang merupakan sebuah proyek yang berfokus untuk membangun sebuah sistem pendidikan yang berbasis virtual dan dapat diakses di mana saja dan kapan saja.</p>
+             <br><br>
+             <p>Dalam proyek ini, kami mencoba memberi beberapa solusi terhadap permasalahan yang ada seperti dengan membuat kelas interaktif antara dosen dan mahasiswa dengan melakukan sesi diskusi dan tanya jawab dengan fitur yang menarik, memberikan apresiasi kepada mahasiswa yang menjawab benar dengan memberikan poin, melakukan tour kampus secara virtual dengan memanfaatkan teknologi, menggunakan beberapa perangkat lunak/software dalam pembelajarannya, dan juga mendatangkan pemateri dari luar.</p>
+             <br><br>
+             <p>Dalam proyek ini juga, kami membuat beberapa proyek sosial dengan beberapa konsep yang telah ditemukan. Pada Kampus Virtual ini, nantinya kita akan membuat suatu program baru pada jenjang S1 berupa kelas Kampus Virtual, ini masih berinduk pada kampus konvensional (contoh: Unpad) namun dengan pembelajaran yang online-based learning. Ini dilengkapi dengan kelebihan lain yang dapat mengatasi permasalahan yang ada, diantaranya adalah; tenaga ajar lintas kampus, biaya yang terjangkau, peniadaan batas umur, pemaksimalan teknologi dan lain sebagainya.</p>
+             </p>
+         </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.getElementById('header');
+        window.addEventListener('scroll', function(){
+          let value = window.scrollY;
+          stars.style.left = value * 0.25 + 'px';
+          moon.style.top = value * 1.05 + 'px';
+          mountains_behind.style.top = value * 0.35 + 'px';
+          text.style.marginRight = value * 2 + 'px';
+          text.style.marginTop = value * 1.05 + 'px';
+          btn.style.marginTop = value * 1.05 + 'px';
+          header.style.top = value * 0.80 + 'px';
+        })
+    </script>
+</body>
+</html>
