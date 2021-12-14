@@ -133,6 +133,11 @@ section img
     padding: 100px;
     background-color: #1c0522;
 }
+@media (max-width:375px){
+    .sec {
+        padding:20px 27px 10px;
+    }
+}
 .sec h2
 {
     font-size: 3.5em;
@@ -140,11 +145,21 @@ section img
     color: #fff;
     text-align: center;
 }
+@media (max-width:375px){
+    .sec h2{
+        font-size: 1em;
+    }
+}
 .sec p
 {
     font-size: 2em;
     color: #fff;
     text-align: justify;
+}
+@media (max-width:375px){
+    .sec p{
+        font-size: 10px;
+    }
 }
 #fosil
 {
